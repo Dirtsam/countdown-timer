@@ -20,6 +20,7 @@ body {
   font-family: var(--ff);
   font-weight: var(--fw-bold);
   background-color: #211a29;
+  overflow:hidden;
 }
 
 h1,
@@ -39,7 +40,8 @@ h3 {
   max-width: 1440px;
   margin: auto;
   background-image: url("./images/bg-stars.svg");
-  height: 100vh;
+  min-height: 100vh;
+  overflow:hidden;
 }
 
 .container {
@@ -152,6 +154,13 @@ h3 {
     letter-spacing: 0.36em;
     width: 148px;
   }
+    
+  .hill {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .links {
@@ -170,6 +179,7 @@ h3 {
     bottom: 5%;
     transform: translateY(-50%, -5%);
   }
+  
   .hill {
     position: absolute;
     bottom: 0;
