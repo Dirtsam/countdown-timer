@@ -20,7 +20,7 @@ body {
   font-family: var(--ff);
   font-weight: var(--fw-bold);
   background-color: #211a29;
-  overflow:hidden;
+   min-height: 100vh;
 }
 
 h1,
@@ -35,13 +35,11 @@ h3 {
 }
 
 .container {
-  min-width: 340px;
+  min-width: 200px;
   width: 100%;
   max-width: 1440px;
   margin: auto;
   background-image: url("./images/bg-stars.svg");
-  min-height: 100vh;
-  overflow:hidden;
 }
 
 .container {
@@ -174,12 +172,15 @@ h3 {
 }
 
 @media (max-width: 375px) {
+  .container{
+    overflow:hidden;
+  }
+  
   .links {
     left: 50%;
     bottom: 5%;
     transform: translateY(-50%, -5%);
   }
-  
   .hill {
     position: absolute;
     bottom: 0;
@@ -198,4 +199,4 @@ h3 {
     bottom: 0;
     left: 0;
   }
-}
+ 
