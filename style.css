@@ -40,6 +40,7 @@ h3 {
   margin: auto;
   background-image: url("./images/bg-stars.svg");
   height: 100vh;
+  overflow:hidden;
 }
 
 .container {
@@ -67,8 +68,8 @@ h3 {
 @media (min-width: 900px) {
   .coming-soon {
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
+    top: 20%;
+    transform: translate(-50%, -20%);
   }
 }
 .title {
